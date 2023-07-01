@@ -1,10 +1,11 @@
 package main
 
-import (
-	"fmt"
-	"math/rand"
-)
+import "fmt"
 
 func main() {
-	fmt.Println("My favorite number is", rand.Intn(10))
+	sum := 1
+	for sum < 1000 {
+		sum += sum
+	}
+	fmt.Println(sum)
 }
